@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>E-Hadir Storyboard - Flow Overview</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav><b>E-Hadir</b><a href="index.html">Flow Overview</a><a href="erd.html">ERD</a></nav>
+<main>
+<h1>E-Hadir: Student Event &amp; Workshop Ticketing</h1>
+<div class="card">
+<p>A centralized event management system for university clubs to issue digital tickets. Click each page below to follow the storyboard.</p>
+</div>
+
+<div class="card">
+<h2>Shared pages</h2>
+<ol>
+<li><a href="login.html">Login</a> (session starts; redirect by role)</li>
+<li><a href="register.html">Register</a> (with validation)</li>
+</ol>
+</div>
+
+<div class="card">
+<h2>Student flow</h2>
+<ol>
+<li><a href="student-events.html">Browse events</a> (Read)</li>
+<li><a href="student-tickets.html">My tickets</a> (Create registration, Read ticket, cancel)</li>
+</ol>
+</div>
+
+<div class="card">
+<h2>Committee flow</h2>
+<ol>
+<li><a href="dashboard.html">Dashboard</a> (charts and summary)</li>
+<li><a href="committee-events.html">Manage events</a> (Read)</li>
+<li><a href="event-form.html">Create / Edit event</a> (Create, Update)</li>
+<li><a href="attendance.html">Attendance</a> (Update status)</li>
+</ol>
+</div>
+
+<div class="card">
+<h2>Admin flow</h2>
+<ol>
+<li><a href="dashboard.html">Dashboard</a></li>
+<li><a href="admin-events.html">Delete canceled events</a> (Delete)</li>
+</ol>
+</div>
+
+<div class="card">
+<h2>Module checklist</h2>
+<table>
+<tr><th>Required module</th><th>Page(s)</th><th>Servlet</th></tr>
+<tr><td>Login / Logout</td><td>login.html</td><td>LoginServlet, LogoutServlet</td></tr>
+<tr><td>Registration with validation</td><td>register.html</td><td>RegisterServlet</td></tr>
+<tr><td>Information management (CRUD)</td><td>events, tickets, attendance, admin</td><td>EventServlet, RegistrationServlet</td></tr>
+<tr><td>Dashboard</td><td>dashboard.html</td><td>DashboardServlet</td></tr>
+</table>
+</div>
+</main>
+</body>
+</html>

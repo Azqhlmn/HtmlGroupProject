@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>E-Hadir - Admin Events</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav><b>E-Hadir</b><a href="dashboard.html">Dashboard</a><a href="admin-events.html">All Events</a><a href="login.html">Logout</a><span class="role">Admin</span></nav>
+<main>
+<h1>All Events (Admin)</h1>
+<table>
+<tr><th>Event</th><th>Club</th><th>Date</th><th>Status</th><th>Action</th></tr>
+<tr><td>Java Web Workshop</td><td>Computer Science Club</td><td>20 Nov 2026</td><td><span class="tag open">Open</span></td><td>-</td></tr>
+<tr><td>Docker Intro</td><td>Computer Science Club</td><td>5 Dec 2026</td><td><span class="tag cancel">Canceled</span></td><td><a class="btn red" href="admin-events.html" onclick="return confirm('Delete this event?')">Delete</a></td></tr>
+<tr><td>Photography Walk</td><td>Photo Club</td><td>1 Dec 2026</td><td><span class="tag cancel">Canceled</span></td><td><a class="btn red" href="admin-events.html" onclick="return confirm('Delete this event?')">Delete</a></td></tr>
+</table>
+<div class="note">
+CRUD: <b>Delete</b> is only available for events with status Canceled. A confirmation prompt is shown, then EventServlet (action=delete) removes the event and its registrations.
+</div>
+</main>
+</body>
+</html>

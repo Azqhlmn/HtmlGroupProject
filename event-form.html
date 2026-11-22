@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>E-Hadir - Event Form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav><b>E-Hadir</b><a href="dashboard.html">Dashboard</a><a href="committee-events.html">Manage Events</a><a href="attendance.html">Attendance</a><a href="login.html">Logout</a><span class="role">Committee</span></nav>
+<main>
+<h1>Create / Edit Event</h1>
+<div class="card">
+<form action="committee-events.html">
+<label>Event title</label>
+<input type="text" placeholder="e.g. Java Web Workshop" required>
+<label>Category</label>
+<select><option>Workshop</option><option>Talk</option><option>Competition</option><option>Social</option></select>
+<label>Description</label>
+<textarea rows="3"></textarea>
+<label>Date and time</label>
+<input type="datetime-local" required>
+<label>Venue</label>
+<input type="text" required>
+<label>Capacity</label>
+<input type="number" min="1" required>
+<label>Status</label>
+<select><option>Open</option><option>Full</option><option>Canceled</option></select>
+<button class="btn" type="submit">Save</button>
+<a class="btn grey" href="committee-events.html">Cancel</a>
+</form>
+<div class="note">
+CRUD: <b>Create</b> (new event) and <b>Update</b> (edit event, capacity, status) handled by EventServlet (action=save). The club is taken from the logged-in committee member. Capacity cannot be lower than the number already registered.
+</div>
+</div>
+</main>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>E-Hadir - Manage Events</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav><b>E-Hadir</b><a href="dashboard.html">Dashboard</a><a href="committee-events.html">Manage Events</a><a href="attendance.html">Attendance</a><a href="login.html">Logout</a><span class="role">Committee</span></nav>
+<main>
+<h1>Manage Events</h1>
+<a class="btn" href="event-form.html">+ Create Event</a>
+<table style="margin-top:14px">
+<tr><th>Event</th><th>Date</th><th>Venue</th><th>Capacity</th><th>Registered</th><th>Status</th><th>Actions</th></tr>
+<tr><td>Java Web Workshop</td><td>20 Nov 2026</td><td>Lab 3</td><td>30</td><td>18</td><td><span class="tag open">Open</span></td><td><a class="btn" href="event-form.html">Edit</a> <a class="btn green" href="attendance.html">Attendance</a></td></tr>
+<tr><td>Career Talk 2026</td><td>25 Nov 2026</td><td>Dewan Seminar</td><td>100</td><td>100</td><td><span class="tag full">Full</span></td><td><a class="btn" href="event-form.html">Edit</a> <a class="btn green" href="attendance.html">Attendance</a></td></tr>
+<tr><td>Docker Intro</td><td>5 Dec 2026</td><td>Lab 2</td><td>25</td><td>3</td><td><span class="tag cancel">Canceled</span></td><td><a class="btn" href="event-form.html">Edit</a></td></tr>
+</table>
+<div class="note">
+CRUD: <b>Read</b> the committee's own club events (EventServlet, action=list). Edit opens the form with existing data. Setting status to Canceled makes the event visible to the admin for deletion.
+</div>
+</main>
+</body>
+</html>

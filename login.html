@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>E-Hadir - Login</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="center">
+<div class="card">
+<h1>E-Hadir Login</h1>
+<form action="student-events.html">
+<label>Email</label>
+<input type="email" placeholder="2025420992@student.uitm.edu.my" required>
+<label>Password</label>
+<input type="password" placeholder="Password" required>
+<button class="btn" type="submit">Login</button>
+<a class="btn grey" href="register.html">Register</a>
+</form>
+<div class="note">
+Servlet: <b>LoginServlet</b> checks the user in the database and creates an HttpSession.<br>
+Redirect by role: student &rarr; <a href="student-events.html">Events</a>, committee &rarr; <a href="dashboard.html">Dashboard</a>, admin &rarr; <a href="admin-events.html">Admin</a>.<br>
+Wrong credentials: show "Invalid email or password".
+</div>
+</div>
+<p><a href="index.html">&larr; Flow overview</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>E-Hadir - Register</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="center">
+<div class="card">
+<h1>Create Account</h1>
+<form action="login.html">
+<label>Full name</label>
+<input type="text" placeholder="Full name" required>
+<label>Student ID</label>
+<input type="text" pattern="[0-9]{10}" placeholder="10 digits" required>
+<label>Email</label>
+<input type="email" placeholder="name@student.uitm.edu.my" required>
+<label>Password (min 8 characters)</label>
+<input type="password" minlength="8" required>
+<label>Confirm password</label>
+<input type="password" minlength="8" required>
+<button class="btn" type="submit">Register</button>
+<a class="btn grey" href="login.html">Back to login</a>
+</form>
+<div class="note">
+Validation (client JavaScript + server <b>RegisterServlet</b>):<br>
+- all fields required<br>
+- valid email format<br>
+- student ID is 10 digits and not already used<br>
+- password at least 8 characters and both passwords match<br>
+- email must be unique<br>
+New accounts get role = student. Committee/admin accounts are created by the admin.
+</div>
+</div>
+</div>
+</body>
+</html>

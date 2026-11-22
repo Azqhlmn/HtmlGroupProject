@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>E-Hadir - My Tickets</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav><b>E-Hadir</b><a href="student-events.html">Events</a><a href="student-tickets.html">My Tickets</a><a href="login.html">Logout</a><span class="role">Student</span></nav>
+<main>
+<h1>My Tickets</h1>
+<div class="card" style="border-left:6px solid #2e9e5b">
+<b>Registration successful.</b> Your digital ticket has been issued.
+</div>
+<table>
+<tr><th>Ticket Code</th><th>Event</th><th>Date</th><th>Venue</th><th>Attendance</th><th></th></tr>
+<tr><td>EH-2026-00124</td><td>Java Web Workshop</td><td>20 Nov 2026</td><td>Lab 3</td><td>Pending</td><td><a class="btn red" href="student-tickets.html">Cancel</a></td></tr>
+<tr><td>EH-2026-00097</td><td>UI/UX Bootcamp</td><td>28 Nov 2026</td><td>Studio 2</td><td>Pending</td><td><a class="btn red" href="student-tickets.html">Cancel</a></td></tr>
+<tr><td>EH-2026-00031</td><td>Git Basics</td><td>2 Oct 2026</td><td>Lab 1</td><td>Attended</td><td>-</td></tr>
+</table>
+<div class="note">
+Read: RegistrationServlet lists the logged-in student's registrations. Cancel removes the registration and frees one seat. The ticket code is shown on screen and is used by the committee to check attendance.
+</div>
+</main>
+</body>
+</html>

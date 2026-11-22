@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>E-Hadir - Attendance</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav><b>E-Hadir</b><a href="dashboard.html">Dashboard</a><a href="committee-events.html">Manage Events</a><a href="attendance.html">Attendance</a><a href="login.html">Logout</a><span class="role">Committee</span></nav>
+<main>
+<h1>Attendance: Java Web Workshop</h1>
+<div class="card">
+<label>Check in by ticket code</label>
+<input type="text" placeholder="EH-2026-00124">
+<a class="btn" href="attendance.html">Check in</a>
+</div>
+<table>
+<tr><th>Ticket Code</th><th>Student</th><th>Student ID</th><th>Status</th><th>Update</th></tr>
+<tr><td>EH-2026-00124</td><td>Aziq</td><td>2025420992</td><td>Pending</td><td><a class="btn green" href="attendance.html">Attended</a> <a class="btn red" href="attendance.html">Absent</a></td></tr>
+<tr><td>EH-2026-00125</td><td>Nur Aina</td><td>2025311204</td><td>Attended</td><td>-</td></tr>
+<tr><td>EH-2026-00126</td><td>Haziq</td><td>2025198877</td><td>Absent</td><td>-</td></tr>
+</table>
+<div class="note">
+CRUD: <b>Update</b> attendance_status (Pending / Attended / Absent) in the registrations table through RegistrationServlet (action=attendance).
+</div>
+</main>
+</body>
+</html>

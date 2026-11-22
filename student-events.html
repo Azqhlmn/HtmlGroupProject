@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>E-Hadir - Browse Events</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav><b>E-Hadir</b><a href="student-events.html">Events</a><a href="student-tickets.html">My Tickets</a><a href="login.html">Logout</a><span class="role">Student</span></nav>
+<main>
+<h1>Upcoming Events</h1>
+<div class="card">
+<input type="text" placeholder="Search event or club...">
+</div>
+<table>
+<tr><th>Event</th><th>Club</th><th>Date</th><th>Venue</th><th>Seats</th><th>Status</th><th></th></tr>
+<tr><td>Java Web Workshop</td><td>Computer Science Club</td><td>20 Nov 2026</td><td>Lab 3</td><td>18 / 30</td><td><span class="tag open">Open</span></td><td><a class="btn green" href="student-tickets.html">Register</a></td></tr>
+<tr><td>Career Talk 2026</td><td>Industry Link Club</td><td>25 Nov 2026</td><td>Dewan Seminar</td><td>100 / 100</td><td><span class="tag full">Full</span></td><td>-</td></tr>
+<tr><td>UI/UX Bootcamp</td><td>Design Society</td><td>28 Nov 2026</td><td>Studio 2</td><td>12 / 40</td><td><span class="tag open">Open</span></td><td><a class="btn green" href="student-tickets.html">Register</a></td></tr>
+</table>
+<div class="note">
+CRUD: <b>Read</b> events (EventServlet, action=list). <b>Create</b> a registration when the student clicks Register (RegistrationServlet). A unique ticket code is generated. Full or canceled events cannot be registered.
+</div>
+</main>
+</body>
+</html>

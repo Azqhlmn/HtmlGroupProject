@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>E-Hadir - Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav><b>E-Hadir</b><a href="dashboard.html">Dashboard</a><a href="committee-events.html">Manage Events</a><a href="admin-events.html">Admin</a><a href="login.html">Logout</a><span class="role">Committee / Admin</span></nav>
+<main>
+<h1>Dashboard</h1>
+<div class="grid">
+<div class="stat"><span>12</span>Total events</div>
+<div class="stat"><span>284</span>Registrations</div>
+<div class="stat"><span>76%</span>Attendance rate</div>
+<div class="stat"><span>2</span>Canceled events</div>
+</div>
+
+<div class="card" style="margin-top:16px">
+<h3>Registrations per event (bar chart)</h3>
+<div class="bar" style="width:60%">Java Web Workshop: 18</div>
+<div class="bar" style="width:100%">Career Talk 2026: 100</div>
+<div class="bar" style="width:30%">UI/UX Bootcamp: 12</div>
+</div>
+
+<div class="card">
+<h3>Attendance status (pie / doughnut chart)</h3>
+<p>Attended 76% &middot; Absent 10% &middot; Pending 14%</p>
+</div>
+
+<div class="card">
+<h3>Capacity vs registered per category (table)</h3>
+<table>
+<tr><th>Category</th><th>Capacity</th><th>Registered</th></tr>
+<tr><td>Workshop</td><td>120</td><td>88</td></tr>
+<tr><td>Talk</td><td>200</td><td>170</td></tr>
+</table>
+</div>
+
+<div class="note">
+Dashboard: <b>DashboardServlet</b> runs aggregate SQL queries (COUNT, GROUP BY) and passes the results to dashboard.jsp. In the real app the bars and pie are drawn with Chart.js.
+</div>
+</main>
+</body>
+</html>
